@@ -1,149 +1,182 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+
+/****************************
+    Default Configurations
+****************************/
+
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  overflow-x: hidden;
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  font-family: Montserrat;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(124, 126, 252, 0.8)), to(rgba(241, 9, 9, 0.452)));
-  background: linear-gradient(to left, rgba(124, 126, 252, 0.8), rgba(241, 9, 9, 0.452));
+    background: white;
+    font-family: Montserrat;
 }
 
-/*****************************
-Header SEction CSS
-*****************************/
-#bg-image {
-  color: white;
-  background: url("../img/header-background.jpg") center center no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+/****************************
+    CSS for Header Section
+****************************/
+
+header {
+    background: #444;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
-.logo a {
-  color: white;
+header .logo {
+    position: fixed;
+    top: 2px;
+    left: 10px;
+    font-family: 'Pacifico', cursive;
 }
 
-.logo .brand {
-  font-size: 35px;
-  top: 20px;
-  left: 20px;
-  position: fixed;
-  float: left;
-  font-family: "Pacifico", cursive;
-  letter-spacing: 5px;
-  background: rgba(0, 0, 0, 0.85);
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  z-index: 999;
+header .logo .brand {
+    color: white;
+    font-size: 35px;
 }
 
-.brand:hover {
-  background: white;
-  color: black;
+header .logo a:hover {
+    background: none;
 }
 
-.menu-btn {
-  font-size: 30px;
-  position: fixed;
-  right: 30px;
-  top: 30px;
+/****************************
+    CSS for Menu NavBar
+****************************/
+
+nav .menu-nav {
+    position: fixed;
+    right: 5px;
+    top: 13px;
 }
 
-.menu-btn #closeBtn, .menu-btn #openBtn {
-  display: none;
+nav .menu-nav li{
+    display: inline-block;
+    margin: 5px;
 }
 
-.menu-nav {
-  position: fixed;
-  top: -5px;
-  right: -1px;
-  background: rgba(0, 0, 0, 0.85);
-  padding-top: 5px;
-  border-radius: 10px;
-  z-index: 999;
-  margin: 30px;
+nav .menu-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .3s ease-out;
 }
 
-.menu-nav .nav-item {
-  display: inline-block;
-  padding: 5px;
+nav .menu-nav li .active, a:hover {
+    background: black;
+    border-radius: 5px;
 }
 
-.menu-nav .nav-item .nav-link {
-  color: white;
-  font-size: 20px;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  font-weight: 600;
+/****************************
+CSS for website Inro Section
+****************************/
+
+.websiteIntro {
+    background: url(../img/websiteIntro-background.jpeg) center center no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-nav .nav-item .nav-link:hover {
-  color: black;
-  background: white;
-  border-radius: 5px;
+.websiteIntro .container {
+    background: linear-gradient(to left, rgba(255, 51, 0, 0.7), rgba(0, 68, 255, 0.7));
+    margin-top: 60px;
 }
 
-.container {
-  background: rgba(0, 4, 255, 0.445);
-  padding: 5px;
-  border-radius: 10px;
+/****************************
+CSS for website events Section
+****************************/
+
+.events .container .title{
+    text-shadow: 8px 8px 10px #444;
+    border-bottom: 5px solid black;
 }
 
-.container .bold {
-  font-weight: bold;
+.events .eventBox img {
+    height: 324px;
+    width: 100%;
 }
 
-/*****************************
-    Events CSS
-*****************************/
-.events {
-  margin-top: 20px;
+.events .eventBox {
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(255, 51, 0, 0.7), rgba(0, 68, 255, 0.7));
 }
 
-.events img {
-  height: 100%;
-  width: 100%;
+.events .eventBox h1 {
+    border-bottom: 5px solid white;
 }
 
-/*********************************
-    Footer CSS
-*********************************/
+/****************************
+CSS for footer
+****************************/
+
 footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
+    background: #444;
+    font-family: Raleway, sans-serif;
 }
 
-footer .container-fixed {
-  margin-top: 50px;
+footer .flex-container a{
+    color: white;
+    transition: all .3s ease-out;
 }
 
-footer .container-fixed i {
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+footer .flex-container a:hover {
+    color: gold;
+    background: transparent;
 }
 
-footer .container-fixed i:hover {
-  color: gold;
+/************************************
+About Us CSS
+************************************/
+
+.contact_form {
+    padding: 5px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.contact_form input {
+    width: 50%;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.contact_form textarea {
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+}
+
+/************************************
+Register CSS
+************************************/
+
+.register_form input{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 60%;
+    margin: 10px;
+}
+
+.login_form input{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 50%;
+    margin: 10px;
+}
