@@ -1,5 +1,10 @@
-var mobileNumber = document.getElementById('mobileNumber');
+$(function(){
+    $('a#logout').click(function(){
+        if(confirm('Are you sure to logout')) {
+            return true;
+        }
 
-    if(mobileNumber > 10) {
-        document.getElementById('display').innerHTML = 'Contact no. more than 10 digits';
-    }
+        return false;
+    });
+});
+

@@ -66,8 +66,8 @@
         <section class="events">
             <div class="container eventBox text-center text-white p-3 my-5 login_form">
                 <h1>Only Admins can Login</h1>
-                <form action="adminConsole/verifyAdmin.php">
-                    <input type="email" name="email" placeholder="Registered Email"><br>
+                <form action="adminConsole/verification.php" method="POST">
+                    <input type="email" name="username" placeholder="Registered Username"><br>
                     <input type="password" name="password" placeholder="Password"><br>
                     <button type="submit" name="verifyAdmin" class="btn btn-danger">Log In</button>
                 </form>

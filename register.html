@@ -66,12 +66,28 @@
         <section class="events">
             <div class="eventBox container my-5 p-3 text-white text-center register_form">
                 <h1>Please Fill in the Details to Register</h1>
-                <form action="adminConsole/register.php" method="POST">
+                <form action="adminConsole/registration.php" method="POST">
                     <p class="display"></p>
                     <input type="text" name="guestName" placeholder="Your Name" required><br>
                     <input type="text" name="collegeName" placeholder="Your College Name" required><br>
-                    <input type="number" name="guestContact" placeholder="Your Contact No." required><br>
+                    <input type="phone" placeholder="Phone No" name="guestContact" required><br>
                     <input type="email" name="guestEmail" placeholder="Your Valid Email" required><br>
+                        <label>Select Your Favourite Event:</label> <select id="cars" name="eventName">
+                        <option value="select">select</option>
+                        <option value="CRYPTOHUNT">CRYPTOHUNT</option>
+                        <option value="Search It">Search It</option>
+                        <option value="Technical Quiz">Technical Quiz</option>
+                        <option value="Coding">Coding</option>
+                        <option value="PUBG">PUBG</option>
+                        <option value="Counter Strike">Counter Strike</option>
+                        <option value="Dance">Dance</option>
+                        <option value="Singing">Singing</option>
+                        <option value="VIT Idol">VIT Idol</option>
+                        <option value="Cooking Without Fire">Cooking Without Fire</option>
+                        <option value="Short Movie">Short Movie</option>
+                        <option value="Mehandi">Mehandi</option>
+                        <option value="Rangoli">Rangoli</option>
+                    </select><br>
                     <input type="submit" value="Register" name="registerGuest" class="btn btn-danger">
                 </form>
             </div>

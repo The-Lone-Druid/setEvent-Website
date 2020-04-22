@@ -98,8 +98,8 @@ CSS for website Inro Section
 CSS for website events Section
 ****************************/
 
-.events .container .title{
-    text-shadow: 8px 8px 10px #444;
+.container .title{
+    text-shadow: 3px 3px 8px #444;
     border-bottom: 5px solid black;
 }
 
@@ -110,7 +110,7 @@ CSS for website events Section
 
 .events .eventBox {
     border-radius: 10px;
-    background: linear-gradient(to right, rgba(255, 51, 0, 0.7), rgba(0, 68, 255, 0.7));
+    background: linear-gradient(to left, rgba(255, 51, 0, 0.288), rgba(0, 68, 255, 0.7));
 }
 
 .events .eventBox h1 {
@@ -124,6 +124,7 @@ CSS for footer
 footer {
     background: #444;
     font-family: Raleway, sans-serif;
+    margin-top: 50px;
 }
 
 footer .flex-container a{
@@ -179,4 +180,12 @@ Register CSS
     outline: none;
     width: 50%;
     margin: 10px;
+}
+
+/***************************************
+Admin Dashboard CSS
+***************************************/
+
+.adminDashboard {
+    margin-top: 80px;
 }
